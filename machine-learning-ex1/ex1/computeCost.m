@@ -14,9 +14,12 @@ J = 0;
 %               You should set J to the cost.
 
 
-
-
-
+ LHS = 1 / (2 * m);
+ SUM = 0;
+ for  i = 1:m 
+  SUM = SUM + ( ( theta(1) + (theta(2) * X(i, 2) ) - y(i) )  ^ 2);
+ end
+J = LHS * SUM;
 % =========================================================================
 
 end
