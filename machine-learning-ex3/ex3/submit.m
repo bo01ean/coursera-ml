@@ -52,5 +52,5 @@ function out = output(partId, auxdata)
     out = sprintf('%0.5f ', predictOneVsAll(t1, Xm));
   elseif partId == '4'
     out = sprintf('%0.5f ', predict(t1, t2, Xm));
-  end 
+  end
 end

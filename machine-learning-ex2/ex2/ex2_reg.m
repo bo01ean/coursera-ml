@@ -73,6 +73,14 @@ fprintf(' 0.0085\n 0.0188\n 0.0001\n 0.0503\n 0.0115\n');
 % with all-ones theta and lambda = 10
 
 
+t = [1, 1, 0];
+x = [-30, 20, 20];
+output = sigmoid(sum(t .* x));
+fprintf( '%f', output);
+
+X = [-10,-5, -1, 0, 1, 5, 10];
+Y = sigmoid(X)
+plot(X,Y)
 
 
 
